@@ -1,11 +1,11 @@
 import React from 'react'
 import PostItem from '../components/PostItem'
 
-const PostList = ({ posts }) => {
+const PostList = ({ posts, deletePost }) => {
   return (
     <div>
         {
-            posts.map((post) => <PostItem post={post}/> )
+            posts.map((post) => <PostItem deletePost={deletePost} post={post}/> )
         }
     </div>
   )
